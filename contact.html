@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ujkol Cyber | Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Ujkol Cyber</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="spaces.html">Espaces</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="button button-secondary nav-action">Réserver</a>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="section-heading fade-up">
+      <span class="eyebrow">Contactez-nous</span>
+      <h1>Prêt à découvrir CyberSpace Café ?</h1>
+      <p>Envoyez-nous un message ou passez nous voir pour réserver votre spot.</p>
+    </section>
+
+    <section class="contact-grid">
+      <div class="contact-card fade-up delay-1">
+        <h2>Nos coordonnées</h2>
+        <p>3ème avenue coin Lusanga</p>
+        <p>Ujkol Cyber</p>
+        <p>Téléphone : 01 23 45 67 89</p>
+        <p>Email : contact@ujkolcyber.com</p>
+      </div>
+      <form class="contact-form fade-up delay-2" onsubmit="handleContact(event)">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+        <button class="button button-primary" type="submit">Envoyer</button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Ujkol Cyber · 3ème avenue coin Lusanga</p>
+      <nav class="footer-nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="spaces.html">Espaces</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
